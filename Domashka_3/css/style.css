@@ -1,0 +1,58 @@
+/* обнуляющий файл */
+@import url("nullstyle.css");
+
+/* стили */
+
+* {
+    color: blue;
+}
+
+h1,
+a {
+    color: green;
+}
+
+.header-text {
+    color: hotpink;
+}
+
+p.text-p {
+    color: rosybrown;
+}
+
+.geografic.position {
+    color: darkgray;
+}
+
+.h-text1,
+.h-text2 {
+    color: paleturquoise;
+}
+
+.people h2 {
+    color: darkkhaki;
+}
+
+.people > p {
+    color: firebrick;
+}
+
+.history-text .h-text3 {
+    color: red;
+}
+
+.transport * {
+    color: aqua;
+}
+
+.money-title ~ p {
+    color:black;
+}
+
+.money-text2+p{
+    color: rgb(225, 97, 203);
+}
+
+[class*='_title']{
+    color: darkgoldenrod;
+}

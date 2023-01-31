@@ -1,0 +1,85 @@
+@import url("nullstyle.css");
+@import url("font-face.css");
+
+
+h1 {
+    text-align: center;
+    font-family: 'Intro';
+    color: gold;
+    text-decoration: underline;
+    font-size: 24px;
+    text-shadow: 3px 1px 10px green;
+}
+
+h2 {
+    font-family: 'Arian AMU Mono';
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-shadow: 3px 1px 10px green;
+}
+
+h3 {
+    text-align: center;
+    font-style: oblique;
+    text-decoration: line-through;
+}
+
+h4 {
+    font-family: 'Old Standard TT';
+    font-weight: normal;
+    text-align: center;
+    text-decoration: overline;
+
+}
+
+.gold-ball-1 {
+    font-family: 'Akrobat';
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.gold-ball-2 {
+    font-family: 'Akrobat';
+    font-weight: 900;
+    text-transform: lowercase;
+}
+
+
+
+.history p {
+    font-family: 'Arian AMU Mono';
+    font-weight: bold;
+    line-height: 1.5;
+    text-indent: 15px;
+    letter-spacing: 5px;
+}
+
+.list {
+    font-family: 'Arian AMU Mono';
+    font-weight: 700;
+}
+
+.list-2 {
+    font-family: 'Arian AMU Mono';
+    font-style: italic;
+    font-weight: normal;
+}
+
+.list-3 {
+    font-family: 'Lobster';
+    font-weight: normal;
+}
+
+.footer-text {
+    font-family: 'Old Standard TT';
+    font-weight: normal;
+    font-style: italic;
+}
+
+.footer-text+p {
+    font-family: 'Old Standard TT';
+    font-weight: 700;
+}

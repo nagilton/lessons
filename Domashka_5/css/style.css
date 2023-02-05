@@ -1,0 +1,89 @@
+@import 'nullstyle.css';
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #212529;
+    margin-bottom: 40px;
+}
+.content {
+    max-width: 1240px;
+    margin: 0px auto;
+}
+.text {
+    max-width: 816px;
+    margin: 0px auto 80px;
+}
+.text p{
+    line-height: 1.78;
+}
+.text-p{
+    padding-bottom: 35px;
+}
+.title-1{
+    max-width: 400px;
+}
+.title-2{
+    max-width: 605px;
+}
+.img-desert {
+    margin-bottom: 80px;
+}
+.img-water {
+    font-size: 0;
+    margin-bottom: 80px;
+}
+.smog{
+    margin-right: 30px;
+}
+/* -------------------------------- */
+.practic {
+    background-color: #2f78c6;
+    color: orange;
+    font-size: 24px;
+    padding: 25px 25px ;
+}
+.text-practic {
+    margin: 10px 50px 35px;
+    font-size: 30px;
+    font-style: italic;
+}
+.text-pr3 {
+    max-width: 30%;
+    font-size: 30px;
+    font-style: oblique;
+    margin-left: 30%;
+    height: 150px;
+    overflow: hidden;
+    color: yellowgreen;
+}
+.text-pr4 {
+    width: 25%;
+    margin: 50px;
+    margin-left: auto;
+    color: rgb(203, 232, 10);
+    overflow: scroll;
+    max-height: 200px;
+    font-size: 40px;
+    font-style: italic;
+    text-align: justify;
+    margin-right: -20px;
+}
+.text-pr5 {
+    width: 75%;
+}
+.blok-practic{
+background-color: #7dac79;
+min-height: 600px;
+text-align: center;
+}
+.text-pr6 {
+    display: inline-block;
+    max-width: 300px;
+}

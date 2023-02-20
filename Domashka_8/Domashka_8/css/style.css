@@ -1,0 +1,209 @@
+@import 'nullstyle.css';
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
+
+[class*='__conteiner'] {
+    max-width: 1270px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.title-blok__body {
+    max-width: 605px;
+}
+
+.title-blok__body :not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.title-blok {
+    padding: 330px 0 100px;
+    background: url('../img/geometria.png') 0 0 / cover no-repeat;
+    color: #f8f9fa;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.title-blok p {
+    color: #e5e5e5;
+    font-weight: 300;
+    line-height: 1.66;
+}
+
+.title-blok__title {
+    color: #f8f9fa;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+/* ----------------------- */
+.list-blok {
+    font-family: 'inter';
+    font-size: 16px;
+    padding: 30px 0px;
+    font-weight: 700;
+    color: #637381;
+}
+
+.list-blok__conteiner {
+    max-width: 1175px;
+}
+
+.list-blok__body ul:not(:last-child) {
+    margin-bottom: 45px;
+}
+
+.list-blok__body li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.list-blok__title {
+    color: #212b36;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.07;
+    margin-bottom: 45px;
+}
+
+.list-blok__list-1 ::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3056d3;
+    margin-right: 10px;
+}
+
+.list-blok__list-2 ::before {
+    content: url('../img/arow-right-2.png');
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-blok__list-3 ::before {
+    content: url('../img/checkmark-circle-green.png');
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-blok__list-4 ::before {
+    content: url('../img/checkmark-circle.png');
+    display: inline-block;
+    margin-right: 10px;
+}
+.list-blok__list-4 ::after{
+    content: '';
+    display: inline-block;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.list-blok__list-5 ::before {
+    content: url('../img/star.png');
+    margin-right: 10px;
+}
+.list-blok__list-5 :nth-child(odd){
+    color: red;
+}
+
+.list-blok__list-6 ::before {
+    content: url('../img/cross-circle-red.png');
+    display: inline-block;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.list-blok__list-6 :hover{
+    font-size: 35px;
+    text-decoration: underline;
+    color: #3056d3;
+    background: linear-gradient(90deg, rgba(98,27,126,1) 0%, rgba(241,238,15,0.6502976190476191) 0%, rgba(0,255,222,0.31416316526610644) 36%, rgba(93,218,228,1) 91%);}
+
+/* ------------------------- */
+.sound {
+    font-family: 'inter';
+    background: #f4f7ff;
+    background: url('../img/Vector18.png') 100% no-repeat,
+        url('../img/Vector17.png') 100% no-repeat;
+}
+
+.sound__conteiner {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.sound__body {
+    padding: 80px 15px;
+}
+
+.sound__text-body :not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.sound__text-body {
+    margin-bottom: 35px;
+}
+
+.sound__text {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 570px;
+    margin-right: 180px;
+}
+
+.sound img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sound__info {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #3056d3;
+}
+
+.sound__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    color: #212b36;
+}
+
+.sound__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #637381;
+}
+
+.sound__button {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 30px;
+    background-color: #3056d3;
+    border-radius: 30px;
+}
+
+.sound__button:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(98, 27, 126, 1) 0%,
+        rgba(98, 27, 126, 0.9108018207282913) 0%,
+        rgba(248, 0, 255, 0.46262254901960786) 0%,
+        rgba(93, 216, 228, 1) 100%
+    );
+}
+
+.sound__button:active {
+    color: #637381;
+}

@@ -1,0 +1,46 @@
+@import'nullstyle.css';
+
+h1,h2 {
+    font-size: 40px;
+    color: gold;
+    text-align: center;
+}
+
+.main__svg {
+    background: #8a2be2;
+}
+
+.main__svg * {
+    vertical-align: middle;
+}
+
+.main__icons-baground {
+    background: url('../img/icons-svg/Oval-decor.svg')top right no-repeat, url('../img/icons-svg/Oval-decor-green.svg')bottom left no-repeat, url('../img/icons-svg/Dotted-decor-Shape-1.svg')bottom right no-repeat,
+        url('../img/icons-svg/Dotted-decor-Shape.svg')center no-repeat;
+}
+
+.main__icons img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+
+.main__svg p {
+    color: white;
+    text-align: center;
+}
+
+.main__icons p,
+.main__logo p,
+.main__icons-content p,
+.main__icons-baground p {
+    font-style: italic;
+    color: aquamarine;
+}
+
+.main__webp {
+    background: gray;
+}
+.main__webp-img {
+    text-align: justify;
+}

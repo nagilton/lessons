@@ -1,0 +1,52 @@
+.test-poligon {
+    background-color: #c9c3c3;
+    padding: 15px;
+    margin-top: 100px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #263191;
+    text-shadow: 2px 2px 5px;
+}
+.test-poligon__blok {
+    background-color: #f57777;
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.test-poligon__round {
+    background-color: greenyellow;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    border: 1px solid #000;
+    font-size: 24px;
+    color: blue;
+    transition: all 0.8s ease-in;
+}
+.test-poligon__round_1:hover{
+    transform: translate(50px,100px);
+}
+.test-poligon__round_2:hover{
+    transform: scale(1.5,1.5) translate(50px,50px);
+}
+.test-poligon__round_3:hover{
+transform: rotate(50deg) translate(90px,-90px);
+}
+.test-poligon__round_4:hover{
+    transform: skew(20deg,-10deg) translate(80px,80px);
+}
+.test-poligon__round_5:hover{
+    transform: matrix(0.8,-0.3,0.3,0.8,70,60);
+}
+.test-poligon__round_6:hover{
+    transform-origin: right top;
+    transform: rotate(-45deg);
+}

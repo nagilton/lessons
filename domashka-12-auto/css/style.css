@@ -1,0 +1,132 @@
+@import'nullstyle.css';
+@import'test-transform-2d.css';
+@import'poligon3d.css';
+
+.car {
+    height: 150px;
+    width: 700px;
+    background-color: #4c41e6;
+    margin: 0px auto;
+    margin-top: 200px;
+    border-radius: 50px 40% 80px 90px;
+    position: relative;
+}
+
+.car__dimensions_front {
+    position: absolute;
+    right: 0;
+    bottom: 65px;
+    width: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #f5bf2c;
+}
+
+.car__dimensions_rear {
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+    width: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #c21111;
+}
+
+.wheel-left {
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    left: 12%;
+    background-color: #6e6d6d;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #000;
+}
+
+.wheel-right {
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    background-color: #6e6d6d;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #000;
+}
+
+.cabin-top {
+    width: 400px;
+    height: 100px;
+    background-color: #4c41e6;
+    position: absolute;
+    top: -80px;
+    left: 15%;
+    border-radius: 100px 100px 0px 0px;
+}
+
+.cabin-top__item {
+    width: 350px;
+    height: 75px;
+    background-color: #b3b2b2;
+    border-radius: 150px 150px 15px 15px;
+    margin: 10px auto 0px;
+    border: 2px solid #000000;
+}
+
+.cabin-top__item::after {
+    content: '';
+    margin-left: 50%;
+    display: inline-block;
+    height: 73px;
+    width: 5px;
+    background-color: #4c41e6;
+}
+
+.door-left {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    left: 125px;
+    top: 10px;
+    width: 180px;
+    height: 130px;
+    border: 2px solid #000000;
+    border-radius: 10px 0px 10px 0px;
+    background-color: #4c41e6;
+
+}
+
+.door-left__handle {
+    position: relative;
+    border-radius: 5px;
+    left: 20px;
+    top: 10px;
+    width: 30px;
+    height: 7px;
+    background-color: #131212;
+}
+
+.door-right {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    left: 125px;
+    top: 10px;
+    width: 180px;
+    height: 130px;
+    border: 2px solid #000000;
+    border-radius: 0px 10px 5px 10px;
+    background-color: #4c41e6;
+}
+
+.door-right__handle {
+    position: relative;
+    border-radius: 5px;
+    left: 20px;
+    top: 10px;
+    width: 30px;
+    height: 7px;
+    background-color: #131212;
+}
+

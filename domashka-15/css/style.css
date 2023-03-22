@@ -1,0 +1,194 @@
+@import'nullstyle.css';
+
+[class*=__conteiner] {
+    max-width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+/* Consultant */
+.consultant{
+    padding: 100px 0;
+}
+.consultant__conteiner>:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.top-decor {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.top-decor::after {
+    content: '';
+    vertical-align: middle;
+    margin-left: 26px;
+    width: 40%;
+    height: 2px;
+    display: inline-block;
+    background-color: #000000;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    /* column-gap: 120px; */
+}
+
+.item__img {
+    overflow: hidden;
+    flex: 0 1 746px;
+    max-height: 365px;
+}
+
+.item__img img {
+    width: 100%;
+    max-height: 100%;
+    transition: all 0.4s ease-out;
+}
+
+.item__img img:hover {
+    transform: scale(1.2);
+}
+
+.item__text {
+    flex: 0 1 334px;
+    align-self: center;
+}
+
+.item__text>:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.item__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #333333;
+}
+
+.item__text p {
+    line-height: 1.6;
+}
+
+.consultant__button {
+    text-align: center;
+}
+
+.consultant__button a {
+    color: #3a9cb4;
+    background-color: #191a1d;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+}
+
+.consultant__button a:hover {
+    background-color: #1a2735;
+    box-shadow: 1px 2px 20px 1px gray;
+}
+
+/* Minimalist Room */
+.room-design {
+    padding: 100px 0px;
+}
+
+.room-design__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.4;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.room-design__subtitle {
+    max-width: 518px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 53px;
+    line-height: 1.6;
+    color: black;
+}
+
+.room-design__img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.room-design__img img {
+    max-width: 100%;
+}
+
+.room-design__text {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 32px;
+    margin-bottom: 80px;
+}
+
+.text-blok p{
+    line-height: 1.6;
+}
+.text-blok__column {
+    flex: 1 1 584px;
+}
+
+.text-blok__column_1 p{
+    margin-bottom: 60px;
+}
+.text-blok__column_2 p:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.text-blok__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.text-blok__info span{
+    display: inline-block;
+}
+.text-blok__info span:not(:last-child){
+    margin-right: 80px;
+}
+.text-blok__info a{
+    transition: all 0.3s ease-out;
+}
+.text-blok__info a:hover{
+    text-decoration: underline;
+    color: #000000;
+    font-size: 20px;
+
+}
+/* galery */
+
+.galery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+.galery__row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+.galery__img{
+    transition: all 0.3s ease-out;
+}
+.galery__img:hover{
+    box-shadow: 1px 1px 10px 1px gray;
+}
+.galery__img img{
+    width: 100%;
+}

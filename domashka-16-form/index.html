@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>DZ 16 form</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__conteiner">
+				<h1 class="header__title">Checkout</h1>
+				<div class="header__subtitle">There are 3 products in your cart</div>
+			</div>
+		</header>
+		<main class="content">
+			<div class="page">
+				<div class="page__conteiner">
+					<h2 class="page__title">Billing Details</h2>
+					<form class="page__form form" method="post"
+						action="https://jsonplaceholder.typicode.com/posts">
+						<div class="form__line">
+							<input class="form__input" required type="text" placeholder="First name*"
+								name="username">
+							<input class="form__input" required type="text" placeholder="Last name*"
+								name="user-last-name">
+						</div>
+						<div class="form__line">
+							<input class="form__input" required type="text" placeholder="Address*"
+								name="adress">
+							<input class="form__input" type="text" placeholder="Address line 2"
+								name="adress-2">
+						</div>
+						<div class="form__line">
+							<select class="form__input form__input_select" required name="Country">
+								<option disabled selected value="1">Country*</option>
+								<option value="Ukraine">Ukraine</option>
+								<option value="Italy">Italy</option>
+								<option value="Spain">Spain</option>
+							</select>
+							<input class="form__input" required type="text" placeholder="City/Town*"
+								name="City/Town">
+						</div>
+						<div class="form__line">
+							<input class="form__input" required type="tel" placeholder="Postcode / ZIP*"
+								name="Postcode">
+							<input class="form__input" required type="tel" placeholder="Phone*" name="Phone*">
+						</div>
+						<div class="form__line">
+							<input class="form__input" required type="tel" placeholder="Postcode / ZIP*"
+								name="Postcode">
+							<input class="form__input" required type="tel" placeholder="Phone*" name="Phone*">
+						</div>
+						<div class="form__line">
+							<textarea class="form__input form__input_textarea"
+								placeholder="Additional information" name="message"></textarea>
+						</div>
+						<div class="form__checkbox checkbox">
+							<div class="checkbox__row">
+								<input class="checkbox__input" type="checkbox" name="account" id="acc-1">
+								<label class="checkbox__lable" for="acc-1">Create Account</label>
+							</div>
+							<div class="checkbox__row">
+								<input class="checkbox__input" type="checkbox" name="different-address"
+									id="address-2">
+								<label class="checkbox__lable" for="address-2">Ship to a different
+									address?</label>
+							</div>
+						</div>
+						<div class="form__discount discount">
+							<h2 class="discount__title">Apply Coupon to get discount!</h2>
+							<div class="discount__line">
+								<input class="discount__input" type="text" placeholder="Coupon code"
+									name="Coupon-code">
+								<button class="discount__btn" type="submit">Apply Code</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="shipping-address">
+				<div class="shipping-address__conteiner">
+					<!-- form-authorization -->
+					<form class="shipping-address__authorization authorization" method="post"
+						action="https://jsonplaceholder.typicode.com/posts">
+						<h2 class="authorization__title">Shipping Address</h2>
+						<div class="authorization__body">
+							<div class="authorization__row">
+								<label class="authorization__lable" for="emale">Email Address *</label>
+								<input class="authorization__input" type="text"
+									placeholder="roni_cost@example.com" name="emale" id="emale" required>
+							</div>
+							<div class="authorization__row">
+								<label class="authorization__lable" for="Password">Password</label>
+								<input class="authorization__input" type="password"
+									placeholder="******************" name="Password" id="Password">
+							</div>
+							<div class="authorization__row">
+								<label class="authorization__lable" for="Postal Code">Zip/Postal Code</label>
+								<input class="authorization__input" type="tel" name="Postal Code"
+									id="Postal Code">
+							</div>
+						</div>
+						<div class="authorization__subtitle">You already have an account with us. Sign in or
+							continue as guest.</div>
+						<div class="authorization__row">
+							<button class="authorization__btn" type="submit">login</button>
+							<a class="authorization__link" href="#">Forgot Your Password?</a>
+						</div>
+					</form>
+					<!-- form-information -->
+					<form class="info" action="https://jsonplaceholder.typicode.com/posts" method="post">
+						<div class="info__column">
+							<div class="info__row">
+								<label class="info__lable" for="name">First Name<span>*</span></label>
+								<input class="info__input" type="text" name="username" id="name" required>
+							</div>
+							<div class="info__row">
+								<label class="info__lable" for="last-name">Last Name<span>*</span></label>
+								<input class="info__input" type="text" name="last-name" id="last-name" required>
+							</div>
+							<div class="info__row">
+								<label class="info__lable" for="company">Company</label>
+								<input class="info__input" type="text" name="company" id="company">
+							</div>
+							<div class="info__row">
+								<label class="info__lable" for="address">Street address<span>*</span></label>
+								<input class="info__input" type="text" name="address" id="address" required>
+							</div>
+							
+							<div class="info__row">
+								<label class="info__lable" for="#"></label>
+								<input class="info__input" type="#" name="#" id="#">
+							</div>
+							<div class="info__row">
+								<label class="info__lable" for="#"></label>
+								<input class="info__input" type="#" name="#" id="#">
+							</div>
+							
+							<div class="info__row">
+								<label class="info__lable" for="country">Country<span>*</span></label>
+								<input class="info__input" type="text" name="country" id="country" required>
+							</div>
+							<div class="info__row">
+								<label class="info__lable" for="state">State/Province<span>*</span></label>
+								<select class="info__input info__input_select" name="region">
+									<option disabled selected value="#">Please select a region, state or province</option>
+									<option value="#">variant1</option>
+									<option value="#">variant2</option>
+								</select>
+							</div>
+						</div>
+						<!-- methods -->
+						<div class="method">
+							<h2 class="method__title">Shipping Methods</h2>
+							<div class="method__blok-variants blok-variants">
+								<div class="blok-variants__row">
+									<div class="blok-variants__radio">
+										<input class="blok-variants__input" type="radio" name="sum" id="sum-1" value="$5.00">
+										<label class="blok-variants__lable" for="sum-1">$5.00</label>
+										<span>Fixed</span>
+										<span>Flat Rate</span>
+									</div>
+									
+								</div>
+								<div class="blok-variants__row">
+									<div class="blok-variants__radio">
+										<input class="blok-variants__input" type="radio" name="sum" id="sum-2" value="$10.00">
+										<label class="blok-variants__lable" for="sum-2">$10.00</label>
+										<span>Table Rate</span>
+										<span>Best Way</span>
+									</div>
+									
+								</div>
+								
+							</div>
+							<div class="method__buttons">
+								<button class="method__button" type="submit">next</button>
+								<a class="method__link" href="#">Back</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

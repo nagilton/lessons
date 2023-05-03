@@ -2,82 +2,89 @@
 @import'nullstyle.css';
 /* fonts */
 @import url("https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap");
+
 /* conteiner */
 [class*=__conteiner] {
     max-width: 1200px;
     margin: 0px auto;
-    padding: 50px 15px;
-}
-/* content */
-.content {}
-
-.offer {
-    font-family: "Inter";
+    padding: 0 15px;
 }
 
-.offer__conteiner {
+/* MAIN */
+.main {
+    font-family: "inter";
+    padding: 80px 0px;
+}
+
+.goods {}
+
+.goods__conteiner {
     display: grid;
     grid-template: repeat(2,230px)/repeat(2,1fr);
     gap: 30px;
 }
-@media (max-width:999px) {
-    .offer__conteiner {
-            grid-template-columns:1fr;
-        }
+
+
+.goods__item {}
+
+.item-goods {
+    position: relative;
+    padding-bottom: 40.350877%;
 }
 
-.offer__item_big {
+.item-goods:nth-child(1) {
     grid-row: 1/3;
-}
-
-.item {
-    position: relative;
-    padding: 40px;
-}
-
-/* .item__imagebig{
-    position: relative;
     padding-bottom: 85.964912%;
-} */
-.item__image{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding-bottom: 40.350877%; /* 230/570 */
-}
-.item__image img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
-.item__link {}
-
-.item__text {
-position: relative;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
+.item-goods__text {
+    max-width: 362px;
+    position: relative;
+    margin: 40px;
+    z-index: 2;
 }
-.item__text>:not(:last-child){
+
+.item-goods__text>:not(:last-child) {
     margin-bottom: 12px;
 }
-.item__subtitle {
+
+.item-goods__link {
+    display: inline-block;
     font-weight: 600;
     line-height: 1.5;
     color: #637381;
 }
 
-.item__title {
+.item-goods__title {
     font-weight: 600;
     font-size: 28px;
     line-height: 1.25;
     color: #212B36;
 }
 
+.item-goods:nth-child(1) .item-goods__img{
+    object-position: 0 100%;
+}
+.item-goods__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+@media (max-width:1023.98px) {
+    .goods__conteiner {
+        gap: 15px;
+    }
+}
+@media (max-width:767.98px) {
+    .goods__conteiner {
+        grid-template: repeat(3,230px)/1fr;
+    }
+    .item-goods:nth-child(1) {
+        grid-row: 1/2;
+    }
+    
+}

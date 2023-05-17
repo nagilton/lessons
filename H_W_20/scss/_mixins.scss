@@ -1,0 +1,32 @@
+@mixin h2title($offerwidth:221px,$offersize:48px, $lh:1.29,$col:black) {
+   font-weight: 600;
+   font-size: $offersize;
+   line-height: $lh;
+   text-transform: uppercase;
+   color:$col;
+   max-width:$offerwidth;
+}
+@mixin offer-subtitle($off-sub-fz:22px,$off-sub-lh:1.68) {
+   font-family: "Roboto";
+   font-weight: 300;
+   font-size: $off-sub-fz;
+   line-height: $off-sub-lh;
+   /* or 168% */
+   color: #000000;
+   margin-top: 7px;
+}
+@mixin button($btnColor:black,$brdColor:black) {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.5;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+   color:$btnColor;
+   border: 2px solid $brdColor;
+   margin-top: 51px;
+   min-width: 175px;
+   min-height: 56px;
+}

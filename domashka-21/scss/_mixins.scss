@@ -1,0 +1,28 @@
+//REM
+@function rem($px) {
+   $result: math.div($px, 16) + rem;
+   @return $result;
+}
+//EM
+@function em($px, $current: 16) {
+   $result: math.div($px, $current) + em;
+   @return $result;
+}
+// MIXIN-1
+@mixin link($ItemColor: #F8F9FA80){
+   font-weight: 500;
+   font-size: rem(12);
+   line-height: rem(25);
+   color:$ItemColor;
+}
+//shablon
+%subtext{
+   font-weight: 300;
+   font-size: rem(12);
+   line-height: rem(20);
+}
+%title{
+   font-weight: 700;
+   font-size: rem(25);
+   line-height: rem(40);
+}
